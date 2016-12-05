@@ -1,0 +1,59 @@
+<html ng-app="gameLinks">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body ng-controller="LinkCtrl">
+  <div class="background">
+    <header class="header">
+      <h1 class="header__h1">Games</h1>
+      <!--<p>Choose your favorite Game !</p>-->
+    </header>
+
+    <main class="main landing-flex">
+      <div ng-repeat="item in linksList">
+        <div ng-click="onClickLink(item)">
+          <a href="#">
+            <div class="tile landing-flex">
+              <h2 class="tile__h1">
+                {{ item.gameName }}
+              </h2>
+              <div class="tile__divider"></div>
+              <p class="tile__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nihil, expedita nemo quaerat nulla.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>GameID</th>
+            <th>GameName</th>
+            <th>Ip</th>
+            <th>Country</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tr ng-repeat="item in postedData">
+          <td>{{item.gameID}}</td>
+          <td>{{item.gameName}}</td>
+          <td>{{item.userIp}}</td>
+          <td>{{item.userCountry}}</td>
+          <td>{{item.clickDate | date:'dd-MMM-yyyy HH:mm:ss'}}</td>
+        </tr>
+      </table>
+    </main>
+  </div>
+
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

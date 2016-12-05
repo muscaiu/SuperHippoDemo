@@ -1,0 +1,263 @@
+
+@font-face {
+  font-family: 'AkzidenzGrotesk BQ Light Conde Regular';
+  src: url('AkzidenzGrotesk.otf') format('otf');
+}
+
+html {
+	font-family:sans-serif;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%
+}
+
+a:active,a:hover {
+	outline-width:0;
+  text-decoration:none;
+}
+
+h1 {
+	font-size:2em;
+	margin:.67em 0
+}
+
+body.no-scroll,svg:not(:root) {
+	overflow:hidden
+}
+
+html {
+	font-size:15px
+}
+
+.landing-flex {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	-ms-grid-row-align:center;
+	align-items:center;
+	-webkit-align-content:center;
+	-ms-flex-line-pack:center;
+	align-content:center
+}
+
+.background {
+	background-color:#f5f6f7;
+	padding:30px 20px 80px;
+	text-align:center;
+}
+.header {
+	margin:auto;
+	max-width:500px;
+	color:#313030
+}
+.main {
+	width:100%;
+	max-width:990px;
+	margin:0 auto
+}
+.tile {
+	border-top:8px solid #343537;
+	width:200px;
+	height:220px;
+	margin:10px;
+	padding:10px;
+	background-color:#fff;
+	box-shadow:.5px 2px 4px 0 #bdbdbd;
+	-webkit-transition:250ms;
+	transition:250ms;
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+	will-change:transform
+}
+.tile:hover {
+	-webkit-transform:translate3d(0,-6px,0);
+	transform:translate3d(0,-6px,0);
+}
+
+.tile__h1 {
+	font-size:1.6rem;
+	letter-spacing:.4px;
+	color:#676363;
+	margin:15px 0;
+	height:80px;
+}
+.tile__divider {
+	width:100%;
+	margin:0 5px;
+	border:.5px solid #343537
+}
+.tile__p {
+	letter-spacing:.2px;
+	line-height:1.5;
+	color:#757575	
+}
+.flex {
+	display:-webkit-flex;
+	display:flex
+}
+.flex--wrap {
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap
+}
+
+
+
+
+table{
+	margin-top:300px;
+}
+
+table.body {
+  background-color: #3e94ec;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+
